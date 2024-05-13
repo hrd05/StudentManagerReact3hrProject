@@ -1,13 +1,12 @@
-import logo from './logo.svg';
+
 import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <React.Fragment>
+    <div className='card'>
       <h1>Hello World!!</h1>
-    </React.Fragment>
-
+    </div>
   );
 }
 
