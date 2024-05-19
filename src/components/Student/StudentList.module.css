@@ -1,0 +1,6 @@
+.student {
+  display: flex;
+  /* color: wheat; */
+  justify-content: space-between;
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.main {
+  text-align: center;
+}
+
+.main h1 {
+  color: #12cffe;
+}
+
+.main h3 {
+  color: white;
+}
+
+.main h3 span {
+  color: #12cffe;
+}
