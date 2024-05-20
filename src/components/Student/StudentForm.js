@@ -64,11 +64,11 @@ const StudentForm = (props) => {
             <form onSubmit={submitHandler}>
                 <div className={classes['form-input']}>
                     <label>Name:</label>
-                    <input type="text" value={name} onChange={nameHandler} />
+                    <input type="text" value={name} onChange={nameHandler} required />
                     <label>Mobile:</label>
-                    <input type="tel" value={mobile} onChange={mobileHandler} />
+                    <input type="tel" value={mobile} onChange={mobileHandler} required />
                     <label>Address:</label>
-                    <input type="text" value={address} onChange={addressHandler} />
+                    <input type="text" value={address} onChange={addressHandler} required />
                 </div>
                 <button>{btnName}</button>
                 <button onClick={props.onClose} type="button">Close</button>

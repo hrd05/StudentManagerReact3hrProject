@@ -13,6 +13,7 @@
   /* background: #12cffe;
   border-color: #12cffe; */
   color: #12cffe;
+  transition: color 0.5s ease;
 }
 
 .button:focus {
