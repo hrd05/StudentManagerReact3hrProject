@@ -1,8 +1,89 @@
 .modal {
-  position: fixed;
-  top: 30vh;
+  /* position: fixed;
+  top: 35vh;
   left: 10%;
-  width: 80%;
+  width: 40%;
   z-index: 100;
-  overflow: hidden;
+  overflow: hidden; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 40rem;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  z-index: 100;
+  /* border-radius: 10px; */
+  box-sizing: border-box;
 }
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.form-input label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.modal form button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #282c34;
+  background-color: #282c34;
+  color: white;
+  border-radius: 1.5rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+/* 
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+input {
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #8b005d;
+  background-color: #8b005d;
+  color: white;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+button:hover,
+button:active {
+  background-color: #ac0e77;
+  border-color: #ac0e77;
+} */

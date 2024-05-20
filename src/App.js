@@ -8,8 +8,8 @@ import StudentProvider from './Store/ContextProvider';
 import StudentList from './components/Student/StudentList';
 
 function App() {
-  // const [totalStudents, updateTotalStudents] = useState(0);
   const [formActive, setFormActive] = useState(false);
+  const [editMode, setEditMode] = useState(false);
 
   // const updateStudentHandler = () => {
   //   updateTotalStudents((prevNum) => {
@@ -22,7 +22,14 @@ function App() {
   }
 
   const closeFormModal = () => {
+    if (editMode) {
+      setEditMode(false);
+    }
     setFormActive(false);
+  }
+
+  const editModeHandler = () => {
+    setEditMode(true);
   }
 
 
@@ -30,8 +37,9 @@ function App() {
     <StudentProvider  >
       <Student onClick={updateFormStatus} />
       {formActive && <Modal onClose={closeFormModal} />}
+      {editMode && <Modal editMode={editMode} onClose={closeFormModal} />}
       <h1>All Students</h1>
-      <StudentList />
+      <StudentList onEdit={editModeHandler} />
     </StudentProvider>
 
 

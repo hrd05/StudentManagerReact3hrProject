@@ -14,7 +14,7 @@ const Modal = (props) => {
     return (
         <Fragment>
             {ReactDOM.createPortal(<Backdrop />, document.getElementById('modal-root'))}
-            {ReactDOM.createPortal(<StudentForm onClose={props.onClose} />, document.getElementById('modal-root'))}
+            {ReactDOM.createPortal(<StudentForm editMode={props.editMode} onClose={props.onClose} />, document.getElementById('modal-root'))}
         </Fragment>
     )
 }
